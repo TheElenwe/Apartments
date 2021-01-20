@@ -18,11 +18,14 @@ console.log(` The average price for rent is ${avg}`);
 
 while (entry1 > 0) {
   entry1 = String(readlineSync.question("give numbers"));
-  if (entry1 > 0) {
-  }
+  
   if (entry1 > avg) {
     console.log("Above average price");
-  } else {
+  } else if (entry1 < avg) {
     console.log("Above below price");
   }
+  if (entry1<=0){
+    console.log("quit program")
 }
+}
+
