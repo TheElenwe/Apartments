@@ -13,12 +13,12 @@ while (entry > 0) {
 }
 console.log(`${sum} Apartments have registed `);
 avg = totalSum / 4;
-console.log(` The average price for rent is ${avg}`);
+console.log(` The average price for rent is ${avg}$`);
 
 while (true) {
   entry = String(readlineSync.question("Give numbers"));
   if (entry < 1) {
-    console.log("Quit program");
+    console.log("Quit Program");
     break;
   }
   if (entry > avg) {
