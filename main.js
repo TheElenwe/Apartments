@@ -4,16 +4,12 @@ let sum = 0;
 let totalSum = 0;
 while (entry > 0) {
   entry = Number(readlineSync.question("Apartments price \n"));
-  if (entry > 0) {
-    sum++;
-  }
-  if (entry > 0) {
-    totalSum += entry;
-  }
+  sum++;
+  totalSum += entry;
 }
-console.log(`${sum} Apartments have registed `);
-avg = totalSum / 4;
-console.log(` The average price for rent is ${avg}$`);
+
+avg = totalSum / 4
+console.log(`${sum} Apartments have registed . The average price for rent is ${avg}$`);
 
 while (true) {
   entry = String(readlineSync.question("Give numbers"));
@@ -27,4 +23,3 @@ while (true) {
     console.log("Bellow average price");
   }
 }
-
